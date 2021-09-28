@@ -1,0 +1,64 @@
+.icon {
+  margin-top: 10px;
+  grid-area: icon;
+}
+
+.date {
+  grid-area: date;
+  font-style: oblique;
+
+}
+
+.user-gsp {
+  font-size: 25px;
+  font-weight: bold;
+  grid-area: gsp;
+}
+
+.average-gsp {
+  font-size: 20px;
+  font-weight: lighter;
+  color: grey;
+  grid-area: avggsp;
+}
+
+.star {
+  grid-area: star;
+  margin-top: 25px;
+  margin-left: 25px;
+}
+
+.menu{
+  grid-area: menu;
+  justify-self: end;
+  align-self: start;
+}
+
+
+.fighter-card {
+  display: grid;
+  width: 350px;
+  grid-template-columns: 80px 200px;
+  grid-template-rows: 30px;
+  grid-template-areas:
+    ". . menu"
+    ". gsp ."
+    "icon date ."
+    "icon . ."
+    ". star .";
+  background-color: gold;
+}
+
+.fighter-card2 {
+  display: grid;
+  width: 350px;
+  grid-template-columns: 80px 200px;
+  grid-template-rows: 30px;
+  grid-template-areas:
+    ". . menu"
+    ". gsp ."
+    "icon date ."
+    "icon . ."
+    ". star .";
+}
+

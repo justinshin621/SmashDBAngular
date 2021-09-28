@@ -1,0 +1,7 @@
+.lbcard-container {
+  display: grid;
+}
+
+.card-item {
+  margin-bottom: 5px;
+}

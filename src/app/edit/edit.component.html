@@ -1,0 +1,48 @@
+<mat-card class="card">
+  <div class="title">
+    <h3>Update Your GSP for: </h3>
+    <igx-avatar
+      class="icon"
+      [src]="avatar"
+      size="large"
+      bgColor="#ffffff00"
+      roundShape="true"
+    ></igx-avatar>
+  </div>
+
+  <form class="form">
+
+    <mat-form-field>
+      <mat-label>Current GSP</mat-label>
+      <input matInput type="number" [(ngModel)]="gsp" [ngModelOptions]="{standalone: true}">
+    </mat-form-field>
+
+    <mat-slider class="mat-form-field"
+                [max]="8000000"
+                [min]="0"
+                [(ngModel)]="gsp"
+                [ngModelOptions]="{standalone: true}"
+                thumbLabel
+                [displayWith]="formatLabel">
+    </mat-slider>
+
+    <p class="main-text">
+      Favorite
+    </p>
+      <mat-radio-group class="radio-group" [(ngModel)]="favorite" [ngModelOptions]="{standalone: true}">
+        <mat-radio-button [value]="true" [disabled]="hasMain">
+          Yes
+        </mat-radio-button>
+        <mat-radio-button [value]="false">
+          No
+        </mat-radio-button>
+      </mat-radio-group>
+
+
+  </form>
+
+
+  <button mat-button routerLink="/mygsp" (click)="editCard()" class="save">Save</button>
+
+</mat-card>
+

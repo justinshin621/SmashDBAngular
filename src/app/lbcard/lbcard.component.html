@@ -1,0 +1,103 @@
+<div *ngIf="isElite; else elseBlock2">
+
+  <mat-card class="rank-card">
+
+    <div>
+      <p class="ranking">{{LBCard.rank}}</p>
+    </div>
+
+    <div>
+      <div *ngIf="isUser(); else elseBlock">
+        <igx-avatar
+          [initials]="initials"
+          roundShape="true"
+          size="medium"
+          bgColor="grey"
+        >
+        </igx-avatar>
+      </div>
+
+      <ng-template #elseBlock>
+        <igx-avatar [initials]="initials"
+                    roundShape="true"
+                    size="medium"
+                    bgColor="{{color}}"
+        >
+        </igx-avatar>
+      </ng-template>
+    </div>
+
+    <section class="avggsp">
+      <p class="title">Average GSP:</p>
+      <p class="avggsp-number">{{avggsp | number}} GSP</p>
+    </section>
+
+    <section class="topgsp">
+      <p class="title">Top GSP:</p>
+      <p class="topgsp-number">{{topgsp | number}} GSP</p>
+    </section>
+
+    <section class="main">
+      <p class="title">Main:</p>
+      <igx-avatar class="icon"
+                  [src]="avatar"
+                  size="medium"
+                  bgColor="#ffffff00"
+      ></igx-avatar>
+    </section>
+
+  </mat-card>
+</div>
+
+<ng-template #elseBlock2>
+  <mat-card class="rank-card2">
+
+    <div>
+      <p class="ranking">{{LBCard.rank}}</p>
+    </div>
+
+    <div>
+      <div *ngIf="isUser(); else elseBlock">
+        <igx-avatar
+          [initials]="initials"
+          roundShape="true"
+          size="medium"
+          bgColor="grey"
+        >
+        </igx-avatar>
+      </div>
+
+      <ng-template #elseBlock>
+        <igx-avatar [initials]="initials"
+                    roundShape="true"
+                    size="medium"
+                    bgColor="{{color}}"
+        >
+        </igx-avatar>
+      </ng-template>
+    </div>
+
+    <section class="avggsp">
+      <p class="title">Average GSP:</p>
+      <p class="avggsp-number">{{avggsp | number}} GSP</p>
+    </section>
+
+    <section class="topgsp">
+      <p class="title">Top GSP:</p>
+      <p class="topgsp-number">{{topgsp | number}} GSP</p>
+    </section>
+
+    <section class="main">
+      <p class="title">Main:</p>
+      <igx-avatar class="icon"
+                  [src]="avatar"
+                  size="medium"
+                  bgColor="#ffffff00"
+      ></igx-avatar>
+    </section>
+
+
+
+  </mat-card>
+</ng-template>
+

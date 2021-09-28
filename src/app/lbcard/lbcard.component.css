@@ -1,0 +1,59 @@
+.rank-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.5fr 1.5fr 1fr;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: gold;
+}
+
+.rank-card2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.5fr 1.5fr 1fr;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.ranking {
+  margin-left: 15px;
+  font-family: "Lucida Console";
+  font-weight: bold;
+  font-size: 30px;
+  padding-right: 25px;
+}
+
+.avggsp {
+  margin-top: -30px;
+}
+
+.avggsp-number {
+  margin-top: -10px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.topgsp-number {
+  margin-top: -10px;
+  font-size: 25px;
+  font-weight: lighter;
+}
+
+.topgsp {
+  margin-top: -30px;
+}
+
+.main {
+  margin-left: -20px;
+  display: grid;
+  grid-template-columns: 75px 50px;
+  margin-top: -30px;
+}
+
+.icon {
+  margin-top: 30px;
+  margin-right: -20px
+}
+
+.title {
+  font-weight: bold;
+}
+

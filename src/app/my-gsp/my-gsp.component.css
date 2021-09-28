@@ -1,0 +1,12 @@
+.fighter-container  {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(305px, 1fr));
+  grid-column-gap: 20px;
+}
+
+
+.card-item{
+  flex: 1;
+  padding: 5px 5px 5px 5px;
+  width:300px;
+}

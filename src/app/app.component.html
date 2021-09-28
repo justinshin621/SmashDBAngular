@@ -1,0 +1,18 @@
+<mat-toolbar *ngIf="isUser">
+
+  <igx-avatar [initials]="initials"
+              roundShape="true"
+              size="small"
+  >
+  </igx-avatar>
+
+  <button mat-button routerLink="/">Home</button>
+
+  <button mat-button routerLink="/mygsp">GSPs</button>
+
+  <button mat-button routerLink="/leaderboard">LeaderBoard</button>
+
+  <button mat-button (click)="logout()">Logout </button>
+</mat-toolbar>
+
+<router-outlet></router-outlet>

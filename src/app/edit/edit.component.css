@@ -1,0 +1,51 @@
+.card {
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+}
+
+.title {
+  display: grid;
+  grid-template-columns: 600px 20px;
+  margin-left: 100px;
+}
+
+.icon {
+  margin-top: 20px;
+  margin-left: -100px
+}
+
+.radio-group {
+  margin-left: 280px;
+  margin-bottom: 50px;
+}
+
+.mat-form-field {
+  width: 500px;
+  margin-left: 125px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  opacity: 1;
+}
+
+.save {
+  margin-left: 300px;
+  padding-top: 50px
+}
+
+.checkbox {
+  margin-top: -50px
+}
+
+.main-text {
+  font-size: 25px;
+  margin-left: 290px
+}
+
+.mat-radio-button {
+  padding-right: 10px
+}

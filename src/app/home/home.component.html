@@ -1,0 +1,26 @@
+<mat-card class="card">
+  <h3 class="text">Submit Your GSP!</h3>
+  <img
+    class="icon"
+    [src]="avatar"
+    height="100px"
+    width="300px"
+  >
+  <form class="form">
+    <mat-form-field appearance="standard" class="width">
+      <mat-label>Select character</mat-label>
+      <mat-select [(ngModel)]="fighter" [ngModelOptions]="{standalone: true}">
+        <mat-option *ngFor="let fighter of characters" value="{{fighter}}">{{fighter}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="standard">
+      <mat-label>GSP</mat-label>
+      <input matInput type="number" min="0" [(ngModel)]="GSP" [ngModelOptions]="{standalone: true}">
+    </mat-form-field>
+
+
+  </form>
+  <button mat-flat-button color="accent" class="button" (click)="submit()">Submit</button>
+</mat-card>
+

@@ -1,0 +1,120 @@
+<div *ngIf="isElite; else elseBlock2">
+  <mat-card class="fighter-card" matTooltip="{{username}}">
+    <div>
+      <igx-avatar class="icon"
+                  [src]="avatar"
+                  roundShape="true"
+                  size="medium"
+                  bgColor="#ffffff00"
+      ></igx-avatar>
+    </div>
+
+    <div class="star">
+      <div *ngIf="isFavorite; else elseBlock">
+        <igx-avatar class="star"
+                    [src]="star"
+                    roundShape="true"
+                    size="small"
+                    bgColor="#ffffff00"
+        ></igx-avatar>
+      </div>
+      <ng-template #elseBlock>
+        <igx-avatar class="star"
+                    icon="sentiment_satisfied"
+                    roundShape="true"
+                    size="small"
+                    bgColor="#ffffff00"
+        ></igx-avatar>
+      </ng-template>
+    </div>
+
+    <section>
+      <div class="user-gsp">{{gsp | number}} GSP</div>
+      <div class="date">{{date | date}}</div>
+      <div class="average-gsp">{{avggsp | number}} AVG GSP</div>
+    </section>
+
+    <div class="menu">
+      <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Delete or edit">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item (click)="edit()">
+          <mat-icon>edit</mat-icon>
+          <span>Edit</span>
+        </button>
+        <button mat-menu-item (click)="delete(fighter.createdDate)">
+          <mat-icon>delete</mat-icon>
+          <span>Delete</span>
+        </button>
+      </mat-menu>
+    </div>
+
+
+  </mat-card>
+</div>
+
+
+
+
+
+<ng-template #elseBlock2>
+  <mat-card class="fighter-card2" matTooltip="{{username}}">
+    <div>
+      <igx-avatar class="icon"
+                  [src]="avatar"
+                  roundShape="true"
+                  size="medium"
+                  bgColor="#ffffff00"
+      ></igx-avatar>
+    </div>
+
+    <div class="star">
+      <div *ngIf="isFavorite; else elseBlock">
+        <igx-avatar class="star"
+                    [src]="star"
+                    roundShape="true"
+                    size="small"
+                    bgColor="#ffffff00"
+        ></igx-avatar>
+      </div>
+      <ng-template #elseBlock>
+        <igx-avatar class="star"
+                    icon="sentiment_satisfied"
+                    roundShape="true"
+                    size="small"
+                    bgColor="#ffffff00"
+        ></igx-avatar>
+      </ng-template>
+    </div>
+
+    <section>
+      <div class="user-gsp">{{gsp | number}} GSP</div>
+      <div class="date">{{date | date}}</div>
+      <div class="average-gsp">{{avggsp | number}} AVG GSP</div>
+    </section>
+
+    <div class="menu">
+      <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Delete or edit">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item (click)="edit()">
+          <mat-icon>edit</mat-icon>
+          <span>Edit</span>
+        </button>
+        <button mat-menu-item (click)="delete(fighter.createdDate)">
+          <mat-icon>delete</mat-icon>
+          <span>Delete</span>
+        </button>
+      </mat-menu>
+    </div>
+
+
+  </mat-card>
+</ng-template>
+
+
+
+
+
